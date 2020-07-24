@@ -103,17 +103,25 @@ button {
   padding: 40px;
 }
 
-.toggleVisibility1 {
-  background-color: $accentColor2
-  }
+.jacketBox, .tshirtBox, .hatBox {
+  z-index: -1;
+  display: none;
+}
 
-.toggleVisibility2 {
+.jacketBox {
+  width: 200px;
+  background-color: $accentColor2;
+}
+
+.tshirtBox {
+  width: 150px;
   background-color: $headingColor;
-  }
+}
 
-.toggleVisibility3 {
+.hatBox {
+  width: 800px;
   background-color: $buttonColor;
-  }
+}
 
 .jacket, 
 .tshirt, 
@@ -141,11 +149,13 @@ button {
 }
 
 .leftOne, .leftTwo, .leftThree {
-  width: 30%;
+  width: 35%;
 }
 
 .calculateTotal {
   background-color: $accentColor2;
+  height: 40vh;
+  display: block;
 }
 
 .textBox {
@@ -154,7 +164,8 @@ button {
   border: none;
   border-radius: 10px;
   box-shadow: 2px 2px #C0C0C0; 
-  margin: 0 auto;
   width: 30%;
+  margin: 0 auto;
 }
+
 

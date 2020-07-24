@@ -26,11 +26,13 @@ $(function () {
    $('#switch1').change(function () {
      const index = 0;
     if ($(this).is(':checked')) {
-      $(".toggleVisibility1").show();
+      //$(".toggleVisibility1").show();
+      $(".jacketBox").show();
       clothingArray[index].checked = true;
     }
     else {
-      $(".toggleVisibility1").hide();
+      //$(".toggleVisibility1").hide();
+      $(".jacketBox").hide();
       clothingArray[index].checked = false;
     }
   });
@@ -38,11 +40,13 @@ $(function () {
   $('#switch2').change(function () {
     const index = 1;
     if ($(this).is(':checked')) {
-      $(".toggleVisibility2").show();
+      //$(".toggleVisibility2").show();
+      $(".tshirtBox").show();
       clothingArray[index].checked = true;
     }
     else {
-      $(".toggleVisibility2").hide();
+      //$(".toggleVisibility2").hide();
+      $(".tshirtBox").hide();
       clothingArray[index].checked = false;
     }
   });
@@ -50,11 +54,13 @@ $(function () {
   $('#switch3').change(function () {
     const index = 2;
     if ($(this).is(':checked')) {
-      $(".toggleVisibility3").show();
+      //$(".toggleVisibility3").show();
+      $(".hatBox").show();
       clothingArray[index].checked = true;
     }
     else {
-      $(".toggleVisibility3").hide();
+      //$(".toggleVisibility3").hide();
+      $(".hatBox").hide();
       clothingArray[index].checked = false;
     }
   });
@@ -93,7 +99,6 @@ $(function () {
       }
 
       $(".totalBox").html(`The minimum time for these items to decompose is ${yearText} and ${monthText}.`);
-
 
     }
   });

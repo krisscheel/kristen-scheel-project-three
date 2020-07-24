@@ -358,23 +358,15 @@ button {
   padding: 40px;
 }
 
-.jacketBox, .tshirtBox, .hatBox {
-  z-index: -1;
-  display: none;
-}
-
-.jacketBox {
-  width: 200px;
+.toggleVisibility1 {
   background-color: #f6bd60;
 }
 
-.tshirtBox {
-  width: 150px;
+.toggleVisibility2 {
   background-color: #f28482;
 }
 
-.hatBox {
-  width: 800px;
+.toggleVisibility3 {
   background-color: #84a59d;
 }
 
@@ -414,13 +406,11 @@ button {
 }
 
 .leftOne, .leftTwo, .leftThree {
-  width: 35%;
+  width: 30%;
 }
 
 .calculateTotal {
   background-color: #f6bd60;
-  height: 40vh;
-  display: block;
 }
 
 .textBox {
@@ -430,8 +420,8 @@ button {
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px #C0C0C0;
           box-shadow: 2px 2px #C0C0C0;
-  width: 30%;
   margin: 0 auto;
+  width: 30%;
 }
 
 footer p {
