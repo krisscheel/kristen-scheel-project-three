@@ -25,32 +25,42 @@
   <main class="wrapper">
     <div class="intro">
       <p>In North America, nearly 10 million tonnes of  clothing are sent to landfill each year. The average Canadian throws away 81 pounds of textiles annually, most of which could be reused or recycled.</p>
-      <p><span class="instructions">Instructions</span>: select up to three clothing items from the list below to find out how long it takes them to decompose.</p>
+      <p><span class="instructions">Instructions</span>: select clothing items from the list below to find out how long it takes them to decompose.</p>
     </div>
     <form class="selectItems">
-      <div class="leftForm">
-        <input type="checkbox" id="switch1"><label for="switch1" class="toggleLabel">Denim Jacket</label>
-        <input type="checkbox" id="switch2"><label for="switch2" class="toggleLabel">Cotton T-shirt</label>
-        <input type="checkbox" id="switch3"><label for="switch3" class="toggleLabel">Wool Hat</label>
+      <div class="topForm">
+        <div class="one">
+          <div class="leftOne">
+            <input type="checkbox" id="switch1"><label for="switch1" class="toggleLabel">Denim Jacket</label>
+          </div>
+          <div class="jacket">
+            <p class="toggleVisibility1" id="answerOne">10-12 months.</p>
+            <img class="toggleVisibility1" src="images/denimjacket.png" alt="illustration of a denim Jacket">
+          </div>
+        </div>
+        <div class="two">
+          <div class="leftTwo">
+            <input type="checkbox" id="switch2"><label for="switch2" class="toggleLabel">Cotton shirt</label>
+          </div>
+            <div class="tshirt">
+            <p class="toggleVisibility2" id="answerTwo">6 months.</p>
+            <img class="toggleVisibility2" src="images/tshirt.png" alt="illustration of a cotton short sleeved t-shirt">
+          </div>
+        </div>
+        <div class="three">
+          <div class="leftTwo">
+            <input type="checkbox" id="switch3"><label for="switch3" class="toggleLabel">Wool Hat</label>
+          </div>
+            <div class="hat">
+            <p class="toggleVisibility3" id="answerThree">1-5 years.</p>
+            <img class="toggleVisibility3" src="images/woolhat.png" alt="illustration of a wool hat">
+          </div>
+        </div>
       </div>
-      <div class="rightForm">
+      <div class="bottomForm">
         <button>reset selections</button>
       </div>
     </form>
-    <div class="answers">
-      <div class="jacket">
-        <p class="toggleVisibility1" id="answerOne">A denim jacket will decompose in 10-12 months.</p>
-        <img class="toggleVisibility1" src="images/denimjacket.png" alt="illustration of a denim Jacket">
-      </div>
-      <div class="tshirt">
-        <p class="toggleVisibility2" id="answerTwo">A cotton t-shirt will decompose in 6 months.</p>
-        <img class="toggleVisibility2"src="images/tshirt.png" alt="illustration of a cotton short sleeved t-shirt">
-      </div>
-      <div class="hat">
-        <p class="toggleVisibility3" id="answerThree">A wool hat will decompose in 1-5 years.</p>
-        <img class="toggleVisibility3" src="images/woolhat.png" alt="illustration of a wool hat">
-      </div>
-    </div>
   </main>
 
   <footer>

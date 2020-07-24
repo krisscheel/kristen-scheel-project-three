@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 900px;
-  width: 80%;
+  width: 95%;
 	margin: 0 auto;
 }
 
@@ -20,102 +20,95 @@ body {
 //Toggles - note: concept for the toggles is borrowed from Juno House Plants Guide code along. 
 
 // removing the image of the checkbox from the screen
- input[type="checkbox"] {
-     opacity: 0;
+input[type="checkbox"] {
+  opacity: 0;
 }
 
- .toggleLabel {
+.toggleLabel {
   font-family: $bodyFont;
   font-size: 1.5rem;
- }
+}
 
- form {
-   padding-top: 5%;
-   width: 60%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
- }
+form {
+  padding-top: 5%;
+}
 
-  .toggleLabel {
-     margin: 15px 0;
-     padding-right: 110px;
-     line-height: 40px;
-     position: relative;
-     display: block;
- }
+.toggleLabel {
+  margin: 15px 0;
+  padding-right: 110px;
+  line-height: 40px;
+  position: relative;
+  display: block;
+}
 
- .toggleLabel::before {
-     content: "";
-     width: 100px;
-     height: 40px;
-     border-radius: 100px;
-     background: $buttonColor;
-     position: absolute;
-     right: 0;
-     top: 0;
- }
+.toggleLabel::before {
+  content: "";
+  width: 100px;
+  height: 40px;
+  border-radius: 100px;
+  background: $buttonColor;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
- /*middle of toggle switch*/
- .toggleLabel::after {
-    content: "";
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: white;
-    position: absolute;
-    top: 5px; 
-    right: 65px;
- }
+/*middle of toggle switch*/
+.toggleLabel::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 5px; 
+  right: 65px;
+}
 
- input[type="checkbox"]:checked + .toggleLabel::after {
-    right: 5px;
- }
+input[type="checkbox"]:checked + .toggleLabel::after {
+  right: 5px;
+}
 
- input[type="checkbox"]:checked + .toggleLabel::before {
-     background: $accentColor1;
- }
+input[type="checkbox"]:checked + .toggleLabel::before {
+  background: $accentColor1;
+}
 
  /* for accessibility */
- input[type="checkbox"]:active + .toggleLabel::before,
- input[type="checkbox"]:focus + .toggleLabel::before {
- }
+  input[type="checkbox"]:active + .toggleLabel::before,
+  input[type="checkbox"]:focus + .toggleLabel::before {
+}
 
- button {
-   background-color: $headingColor;
-   color: white;
-   padding: 20px;
-   border: none;
-   border-radius: 10px;
-   box-shadow: 2px 2px #C0C0C0; 
-   margin-top: 80px;
- }
+button {
+  background-color: $headingColor;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px #C0C0C0; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
- .answers {
-   margin-top: 5%;
- }
+.toggleVisibility1, 
+.toggleVisibility2, 
+.toggleVisibility3 {
+  display: none;
+  padding: 40px;
+}
 
- .toggleVisibility1, 
- .toggleVisibility2, 
- .toggleVisibility3 {
-   display: none;
-   padding: 40px;
-   margin-top: 40px;
- }
+.toggleVisibility1 {
+  background-color: $buttonColor;
+  }
 
- .toggleVisibility1 {
-    background-color: $accentColor2;
- }
+.toggleVisibility2 {
+  background-color: $headingColor;
+  }
 
- .toggleVisibility2 {
-   background-color: $headingColor;
- }
+.toggleVisibility3 {
+  background-color: $accentColor2;
+  }
 
- .toggleVisibility3 {
-   background-color: $buttonColor;
- }
-
- .jacket, 
+.jacket, 
 .tshirt, 
 .hat {
   display: flex;
@@ -123,24 +116,23 @@ body {
   padding: 20px;
 }
 
-.jacket p {
-  width: 40%;
-  font-size: 1.5rem;
+.jacket p, .tshirt p, .hat p {
+  font-size: 1rem;
   font-family: $bodyFont;
 }
 
-.tshirt p {
+.jacket img, .tshirt img, .hat img {
+  height: 150px;
+}
+
+.one, .two, .three {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0;
+}
+
+.leftOne, .leftTwo, .leftThree {
   width: 30%;
-  font-size: 1.5rem;
-  font-family: $bodyFont;
 }
 
-.hat p{
-  width: 100%;
-  font-size: 1.5rem;
-  font-family: $bodyFont;
-}
-
- .jacket img, .tshirt img, .hat img {
-   height: 200px;
- }

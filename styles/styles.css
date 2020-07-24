@@ -255,7 +255,7 @@ h1 {
 
 .wrapper {
   max-width: 900px;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -284,17 +284,6 @@ input[type="checkbox"] {
 
 form {
   padding-top: 5%;
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .toggleLabel {
@@ -345,11 +334,13 @@ button {
   border-radius: 10px;
   -webkit-box-shadow: 2px 2px #C0C0C0;
           box-shadow: 2px 2px #C0C0C0;
-  margin-top: 80px;
-}
-
-.answers {
-  margin-top: 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .toggleVisibility1,
@@ -357,11 +348,10 @@ button {
 .toggleVisibility3 {
   display: none;
   padding: 40px;
-  margin-top: 40px;
 }
 
 .toggleVisibility1 {
-  background-color: #f6bd60;
+  background-color: #84a59d;
 }
 
 .toggleVisibility2 {
@@ -369,7 +359,7 @@ button {
 }
 
 .toggleVisibility3 {
-  background-color: #84a59d;
+  background-color: #f6bd60;
 }
 
 .jacket,
@@ -385,26 +375,29 @@ button {
   padding: 20px;
 }
 
-.jacket p {
-  width: 40%;
-  font-size: 1.5rem;
-  font-family: "Comfortaa", cursive;
-}
-
-.tshirt p {
-  width: 30%;
-  font-size: 1.5rem;
-  font-family: "Comfortaa", cursive;
-}
-
-.hat p {
-  width: 100%;
-  font-size: 1.5rem;
+.jacket p, .tshirt p, .hat p {
+  font-size: 1rem;
   font-family: "Comfortaa", cursive;
 }
 
 .jacket img, .tshirt img, .hat img {
-  height: 200px;
+  height: 150px;
+}
+
+.one, .two, .three {
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 0;
+}
+
+.leftOne, .leftTwo, .leftThree {
+  width: 30%;
 }
 
 footer p {
