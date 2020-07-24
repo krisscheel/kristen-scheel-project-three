@@ -3,5 +3,10 @@
 footer p {
   text-align: center;
   font-family: $bodyFont;
-  padding-top: 5%;
+  padding: 5% 0 2% 0;
+}
+
+footer {
+  background: $buttonColor;
+  margin-top: 40px;
 }

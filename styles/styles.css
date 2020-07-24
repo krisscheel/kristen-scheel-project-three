@@ -221,22 +221,41 @@ textarea {
   overflow: hidden;
 }
 
+header {
+  background: #f5cac3;
+  height: 35vh;
+}
+
+.headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: "Lobster", cursive;
-  color: #f28482;
+  color: #5f0f40;
   font-size: 5em;
-  width: 60%;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 15%;
   letter-spacing: 0.02em;
 }
 
-span {
+.l {
   letter-spacing: 0.23em;
+}
+
+.instructions {
+  font-weight: 700;
 }
 
 .wrapper {
   max-width: 900px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -244,11 +263,14 @@ body {
   background: #F7EDE2;
 }
 
-.instructions {
+.intro {
+  padding-top: 5%;
+}
+
+.intro p {
   font-family: "Comfortaa", cursive;
-  padding-top: 10%;
+  padding-top: 2%;
   font-size: 1rem;
-  width: 40%;
 }
 
 input[type="checkbox"] {
@@ -262,7 +284,17 @@ input[type="checkbox"] {
 
 form {
   padding-top: 5%;
-  width: 40%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .toggleLabel {
@@ -305,15 +337,27 @@ input[type="checkbox"]:checked + .toggleLabel::before {
 }
 
 /* for accessibility */
-input[type="checkbox"]:active + .toggleLabel::before,
-input[type="checkbox"]:focus + .toggleLabel::before {
-  background: #f5cac3;
+button {
+  background-color: #f28482;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px #C0C0C0;
+          box-shadow: 2px 2px #C0C0C0;
+  margin-top: 80px;
+}
+
+.answers {
+  margin-top: 5%;
 }
 
 .toggleVisibility1,
 .toggleVisibility2,
 .toggleVisibility3 {
   display: none;
+  padding: 40px;
+  margin-top: 40px;
 }
 
 .toggleVisibility1 {
@@ -328,8 +372,48 @@ input[type="checkbox"]:focus + .toggleLabel::before {
   background-color: #84a59d;
 }
 
+.jacket,
+.tshirt,
+.hat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+}
+
+.jacket p {
+  width: 40%;
+  font-size: 1.5rem;
+  font-family: "Comfortaa", cursive;
+}
+
+.tshirt p {
+  width: 30%;
+  font-size: 1.5rem;
+  font-family: "Comfortaa", cursive;
+}
+
+.hat p {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: "Comfortaa", cursive;
+}
+
+.jacket img, .tshirt img, .hat img {
+  height: 200px;
+}
+
 footer p {
   text-align: center;
   font-family: "Comfortaa", cursive;
-  padding-top: 5%;
+  padding: 5% 0 2% 0;
+}
+
+footer {
+  background: #84a59d;
+  margin-top: 40px;
 }

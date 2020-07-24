@@ -9,29 +9,48 @@
   <script src="https://kit.fontawesome.com/35078fa9ad.js" crossorigin="anonymous"></script>
   
   <!--Google Fonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Lobster&display=swap"
+    rel="stylesheet">
 
   <!--stylesheet-->
   <link rel="stylesheet" href="./styles/styles.css">
 
 </head>
 <body>
-  <header class="wrapper">
-    <h1>The <span>L</span>ifecycle of Clothing</h1>
+  <header>
+    <div class="headline wrapper">
+      <h1>The <span class="l">L</span>ifecycle of Clothing</h1>
+    </div>
   </header>
   <main class="wrapper">
-    <p class="instructions">Instructions: select up to three clothing items from the list below to find out how long it takes them to decompose</p>
+    <div class="intro">
+      <p>In North America, nearly 10 million tonnes of  clothing are sent to landfill each year. The average Canadian throws away 81 pounds of textiles annually, most of which could be reused or recycled.</p>
+      <p><span class="instructions">Instructions</span>: select up to three clothing items from the list below to find out how long it takes them to decompose.</p>
+    </div>
     <form class="selectItems">
-      <input type="checkbox" id="switch1"><label for="switch1" class="toggleLabel">Denim Jacket</label>
-      <input type="checkbox" id="switch2"><label for="switch2" class="toggleLabel">Cotton T-shirt</label>
-      <input type="checkbox" id="switch3"><label for="switch3" class="toggleLabel">Wool Hat</label>
-      <button>reset selections</button>
+      <div class="leftForm">
+        <input type="checkbox" id="switch1"><label for="switch1" class="toggleLabel">Denim Jacket</label>
+        <input type="checkbox" id="switch2"><label for="switch2" class="toggleLabel">Cotton T-shirt</label>
+        <input type="checkbox" id="switch3"><label for="switch3" class="toggleLabel">Wool Hat</label>
+      </div>
+      <div class="rightForm">
+        <button>reset selections</button>
+      </div>
     </form>
-    <p class="toggleVisibility1" id="answerOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus omnis veniam vel. Iusto sequi a quae, officiis laboriosam, quasi vitae ratione saepe esse adipisci eum voluptatum voluptatibus, animi at ipsum!</p>
-    <p class="toggleVisibility2" id="answerTwo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus omnis veniam vel. Iusto sequi
-      a quae, officiis laboriosam, quasi vitae ratione saepe esse adipisci eum voluptatum voluptatibus, animi at ipsum!</p>
-    <p class="toggleVisibility3" id="answerThree">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus omnis veniam vel. Iusto sequi
-        a quae, officiis laboriosam, quasi vitae ratione saepe esse adipisci eum voluptatum voluptatibus, animi at ipsum!</p>
+    <div class="answers">
+      <div class="jacket">
+        <p class="toggleVisibility1" id="answerOne">A denim jacket will decompose in 10-12 months.</p>
+        <img class="toggleVisibility1" src="images/denimjacket.png" alt="illustration of a denim Jacket">
+      </div>
+      <div class="tshirt">
+        <p class="toggleVisibility2" id="answerTwo">A cotton t-shirt will decompose in 6 months.</p>
+        <img class="toggleVisibility2"src="images/tshirt.png" alt="illustration of a cotton short sleeved t-shirt">
+      </div>
+      <div class="hat">
+        <p class="toggleVisibility3" id="answerThree">A wool hat will decompose in 1-5 years.</p>
+        <img class="toggleVisibility3" src="images/woolhat.png" alt="illustration of a wool hat">
+      </div>
+    </div>
   </main>
 
   <footer>
