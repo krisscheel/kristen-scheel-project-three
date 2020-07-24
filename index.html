@@ -22,12 +22,12 @@
       <h1>The <span class="l">L</span>ifecycle of Clothing</h1>
     </div>
   </header>
-  <main class="wrapper">
-    <div class="intro">
+  <main>
+    <div class="intro wrapper">
       <p>In North America, nearly 10 million tonnes of  clothing are sent to landfill each year. The average Canadian throws away 81 pounds of textiles annually, most of which could be reused or recycled.</p>
       <p><span class="instructions">Instructions</span>: select clothing items from the list below to find out how long it takes them to decompose.</p>
     </div>
-    <form class="selectItems">
+    <form class="selectItems wrapper">
       <div class="topForm">
         <div class="one">
           <div class="leftOne">
@@ -58,9 +58,16 @@
         </div>
       </div>
       <div class="bottomForm">
-        <button>reset selections</button>
+        <button class="reset">reset selections</button>
       </div>
     </form>
+
+    <section class="calculateTotal">
+      <div class="textBox">
+        <p>Click the button below to calculate the total time for all selected items above to decompose.</p>
+      </div>
+      <button class="calculate">calculate total</button>
+    </section>
   </main>
 
   <footer>
