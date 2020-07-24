@@ -1,6 +1,8 @@
 // THE LIFECYCLE OF CLOTHING 
 
-const clothingArray = [
+const myApp = {};
+
+myApp.clothing = [
   {
     name: "denim jacket",
     minBreakdown: 10,
@@ -21,19 +23,18 @@ const clothingArray = [
   }
 ]
 
-//Document ready: 
-$(function () {
-   $('#switch1').change(function () {
-     const index = 0;
+myApp.changeEvents = function () {
+  $('#switch1').change(function () {
+    const index = 0;
     if ($(this).is(':checked')) {
       //$(".toggleVisibility1").show();
       $(".jacketBox").show();
-      clothingArray[index].checked = true;
+      myApp.clothing[index].checked = true;
     }
     else {
       //$(".toggleVisibility1").hide();
       $(".jacketBox").hide();
-      clothingArray[index].checked = false;
+      myApp.clothing[index].checked = false;
     }
   });
 
@@ -42,12 +43,12 @@ $(function () {
     if ($(this).is(':checked')) {
       //$(".toggleVisibility2").show();
       $(".tshirtBox").show();
-      clothingArray[index].checked = true;
+      myApp.clothing[index].checked = true;
     }
     else {
       //$(".toggleVisibility2").hide();
       $(".tshirtBox").hide();
-      clothingArray[index].checked = false;
+      myApp.clothing[index].checked = false;
     }
   });
 
@@ -56,36 +57,38 @@ $(function () {
     if ($(this).is(':checked')) {
       //$(".toggleVisibility3").show();
       $(".hatBox").show();
-      clothingArray[index].checked = true;
+      myApp.clothing[index].checked = true;
     }
     else {
       //$(".toggleVisibility3").hide();
       $(".hatBox").hide();
-      clothingArray[index].checked = false;
+      myApp.clothing[index].checked = false;
     }
   });
+}
 
 //calculate totals function
+myApp.calculateEvents = function () {
   $(".calculate").click(function () {
     let i;
     let sum = 0;
     //loop through the checked boxes, and add up the minimum breakdown times.
-    for (i = 0; i < clothingArray.length; i++) {
-      if (clothingArray[i].checked) {
+    for (i = 0; i < myApp.clothing.length; i++) {
+      if (myApp.clothing[i].checked) {
         //find the minimum breakdown time in months
-        sum = sum + clothingArray[i].minBreakdown;
+        sum = sum + myApp.clothing[i].minBreakdown;
       }
     }
     // take the time in months, and break it down into years and months
     if (sum <= 12) {
-      $(".totalBox").html(`The total is ${sum} months.`);
+      $(".totalBox").html(`The minimun amount of time for the item(s) to decompose is ${sum} months.`);
     } else {
       const years = Math.floor(sum / 12);
       const monthRemain = sum % 12;
       // accomodating edits to the string depending on whether the answer is one year or multiple years
       let yearText = "";
       if (years == 1) {
-        yearText = `${years} year`; 
+        yearText = `${years} year`;
       } else {
         yearText = `${years} years`;
       }
@@ -102,4 +105,14 @@ $(function () {
 
     }
   });
+}
+
+myApp.init = function () {
+  myApp.changeEvents();
+  myApp.calculateEvents();
+}
+
+//Document ready: 
+$(function () {
+  myApp.init();
 });
