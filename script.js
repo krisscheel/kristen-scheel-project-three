@@ -14,33 +14,32 @@
 //Document ready: 
 $(function () {
    $('#switch1').change(function () {
-    console.log('here');
     if ($(this).is(':checked')) {
-      console.log('box is 1 checked');
+      $(".toggleVisibility1").show();
     }
     else {
-      console.log('box is 1 NOT checked');
+      $(".toggleVisibility1").hide();
     }
   });
 
   $('#switch2').change(function () {
     console.log('here');
     if ($(this).is(':checked')) {
-      console.log('box 2 is checked');
+      $(".toggleVisibility2").show();
     }
     else {
-      console.log('box 2 is NOT checked');
+      $(".toggleVisibility2").hide();
     }
   });
 
   $('#switch3').change(function () {
     console.log('here');
     if ($(this).is(':checked')) {
-      console.log('box 3 is checked');
+      $(".toggleVisibility3").show();
     }
     else {
-      console.log('box 3 is NOT checked');
+      $(".toggleVisibility3").hide();
     }
   });
-  
- });
+
+});

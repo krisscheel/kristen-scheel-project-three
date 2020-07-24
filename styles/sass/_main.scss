@@ -67,11 +67,29 @@ body {
  }
 
  input[type="checkbox"]:checked + .toggleLabel::before {
-     background: $accentColor2;
+     background: $accentColor1;
  }
 
  /* for accessibility */
  input[type="checkbox"]:active + .toggleLabel::before,
  input[type="checkbox"]:focus + .toggleLabel::before {
-     background: $accentColor2;
+     background: $accentColor1;
+ }
+
+ .toggleVisibility1, 
+ .toggleVisibility2, 
+ .toggleVisibility3 {
+   display: none;
+ }
+
+ .toggleVisibility1 {
+    background-color: $accentColor2;
+ }
+
+ .toggleVisibility2 {
+   background-color: $headingColor;
+ }
+
+ .toggleVisibility3 {
+   background-color: $buttonColor;
  }

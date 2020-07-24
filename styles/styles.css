@@ -301,13 +301,31 @@ input[type="checkbox"]:checked + .toggleLabel::after {
 }
 
 input[type="checkbox"]:checked + .toggleLabel::before {
-  background: #f6bd60;
+  background: #f5cac3;
 }
 
 /* for accessibility */
 input[type="checkbox"]:active + .toggleLabel::before,
 input[type="checkbox"]:focus + .toggleLabel::before {
-  background: #f6bd60;
+  background: #f5cac3;
+}
+
+.toggleVisibility1,
+.toggleVisibility2,
+.toggleVisibility3 {
+  display: none;
+}
+
+.toggleVisibility1 {
+  background-color: #f6bd60;
+}
+
+.toggleVisibility2 {
+  background-color: #f28482;
+}
+
+.toggleVisibility3 {
+  background-color: #84a59d;
 }
 
 footer p {
