@@ -27,12 +27,12 @@ myApp.changeEvents = function () {
   $('#switch1').change(function () {
     const index = 0;
     if ($(this).is(':checked')) {
-      //$(".toggleVisibility1").show();
+      $(".toggleVisibility1").show();
       $(".jacketBox").show();
       myApp.clothing[index].checked = true;
     }
     else {
-      //$(".toggleVisibility1").hide();
+      $(".toggleVisibility1").hide();
       $(".jacketBox").hide();
       myApp.clothing[index].checked = false;
     }
@@ -41,12 +41,12 @@ myApp.changeEvents = function () {
   $('#switch2').change(function () {
     const index = 1;
     if ($(this).is(':checked')) {
-      //$(".toggleVisibility2").show();
+      $(".toggleVisibility2").show();
       $(".tshirtBox").show();
       myApp.clothing[index].checked = true;
     }
     else {
-      //$(".toggleVisibility2").hide();
+      $(".toggleVisibility2").hide();
       $(".tshirtBox").hide();
       myApp.clothing[index].checked = false;
     }
@@ -55,12 +55,12 @@ myApp.changeEvents = function () {
   $('#switch3').change(function () {
     const index = 2;
     if ($(this).is(':checked')) {
-      //$(".toggleVisibility3").show();
+      $(".toggleVisibility3").show();
       $(".hatBox").show();
       myApp.clothing[index].checked = true;
     }
     else {
-      //$(".toggleVisibility3").hide();
+      $(".toggleVisibility3").hide();
       $(".hatBox").hide();
       myApp.clothing[index].checked = false;
     }
