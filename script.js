@@ -5,20 +5,27 @@ const myApp = {};
 myApp.clothing = [
   {
     name: "denim jacket",
-    minBreakdown: 10,
-    maxBreadown: 12,
+    minBreakdown: 12,
     checked: false
   },
   {
     name: "t-shirt",
     minBreakdown: 6,
-    maxBreakdown: 6,
     checked: false
   },
   {
     name: "wool hat",
-    minBreakdown: 12,
-    maxBreakdown: 60,
+    minBreakdown: 60,
+    checked: false
+  },
+  {
+    name: "lycra leggings",
+    minBreakdown: 120,
+    checked: false
+  },
+  {
+    name: "silk dress",
+    minBreakdown: 48,
     checked: false
   }
 ]
@@ -27,8 +34,8 @@ myApp.changeEvents = function () {
   $('#switch1').change(function () {
     const index = 0;
     if ($(this).is(':checked')) {
-      $(".toggleVisibility1").show();
-      $(".jacketBox").show();
+      $(".jacketBox").animate({'width': 'toggle', 'duration': 1000});
+      $(".toggleVisibility1").show()
       myApp.clothing[index].checked = true;
     }
     else {
@@ -42,7 +49,7 @@ myApp.changeEvents = function () {
     const index = 1;
     if ($(this).is(':checked')) {
       $(".toggleVisibility2").show();
-      $(".tshirtBox").show();
+      $(".tshirtBox").animate({ 'width': 'toggle', 'duration': 1000 });
       myApp.clothing[index].checked = true;
     }
     else {
@@ -56,12 +63,40 @@ myApp.changeEvents = function () {
     const index = 2;
     if ($(this).is(':checked')) {
       $(".toggleVisibility3").show();
-      $(".hatBox").show();
+      $(".hatBox").animate({ 'width': 'toggle', 'duration': 1000 });
       myApp.clothing[index].checked = true;
     }
     else {
       $(".toggleVisibility3").hide();
       $(".hatBox").hide();
+      myApp.clothing[index].checked = false;
+    }
+  });
+
+  $('#switch4').change(function () {
+    const index = 3;
+    if ($(this).is(':checked')) {
+      $(".toggleVisibility4").show();
+      $(".lycraBox").animate({ 'width': 'toggle', 'duration': 1000 });
+      myApp.clothing[index].checked = true;
+    }
+    else {
+      $(".toggleVisibility4").hide();
+      $(".lycraBox").hide();
+      myApp.clothing[index].checked = false;
+    }
+  });
+
+  $('#switch5').change(function () {
+    const index = 4;
+    if ($(this).is(':checked')) {
+      $(".toggleVisibility5").show();
+      $(".silkBox").animate({ 'width': 'toggle', 'duration': 1000 });
+      myApp.clothing[index].checked = true;
+    }
+    else {
+      $(".toggleVisibility5").hide();
+      $(".silkBox").hide();
       myApp.clothing[index].checked = false;
     }
   });

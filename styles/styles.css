@@ -264,10 +264,10 @@ body {
 }
 
 .intro, .textBox {
-  background: white;
+  background: #fdf2f2;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 2px #C0C0C0;
-          box-shadow: 2px 2px #C0C0C0;
+  -webkit-box-shadow: 6px 6px #C0C0C0;
+          box-shadow: 6px 6px #C0C0C0;
   width: 50%;
   height: 200px;
   margin-top: 5%;
@@ -373,9 +373,14 @@ button {
       -ms-flex-align: center;
           align-items: center;
   font-size: 22px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 20px;
   font-family: "Comfortaa", cursive;
-  height: 80px;
-  width: 300px;
+  height: 120px;
+  width: 400px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .reset {
@@ -383,51 +388,74 @@ button {
   margin: 10% 0 10% 0;
 }
 
+.reset:hover, .calculate:hover {
+  font-weight: 700;
+  letter-spacing: 3px;
+  background-color: #fdf2f2;
+  color: #f28482;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .calculate {
-  background-color: #5f0f40;
+  background-color: #8f5779;
   margin: 5% 0 5% 0;
 }
 
 .toggleVisibility1,
 .toggleVisibility2,
-.toggleVisibility3 {
+.toggleVisibility3,
+.toggleVisibility4,
+.toggleVisibility5 {
   display: none;
-  padding: 40px;
+  padding: 10px;
 }
 
-.jacketBox, .tshirtBox, .hatBox {
+.jacketBox, .tshirtBox, .hatBox, .lycraBox, .silkBox {
   display: none;
   height: 100px;
 }
 
 .jacketBox {
-  width: 200px;
+  width: 150px;
   background-color: #f6bd60;
 }
 
 .tshirtBox {
-  width: 150px;
+  width: 100px;
   background-color: #f28482;
 }
 
 .hatBox {
-  width: 800px;
+  width: 300px;
   background-color: #84a59d;
+}
+
+.lycraBox {
+  width: 800px;
+  background-color: #8f5779;
+}
+
+.silkBox {
+  width: 200px;
+  background-color: #f67260;
 }
 
 .jacket,
 .tshirt,
-.hat {
+.hat,
+.lycra,
+.silk {
   padding: 20px;
   width: 60%;
 }
 
-.jacket p, .tshirt p, .hat p {
+.jacket p, .tshirt p, .hat p, .lycra p, .silk p {
   font-size: 1rem;
   font-family: "Comfortaa", cursive;
 }
 
-.one, .two, .three {
+.one, .two, .three, .four, .five {
   height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,7 +467,7 @@ button {
   margin-top: 0;
 }
 
-.leftOne, .leftTwo, .leftThree {
+.leftOne, .leftTwo, .leftThree, .leftFour, .leftFive {
   width: 35%;
 }
 
@@ -467,3 +495,7 @@ footer p {
 footer {
   background: #84a59d;
 }
+
+/* small desktops and portrait tablet*/
+/* portrait tablet to landscape phone */
+/* portrait phone */

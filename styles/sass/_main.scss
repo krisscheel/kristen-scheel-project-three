@@ -9,9 +9,9 @@ body {
 }
 
 .intro, .textBox {
-  background: white;
+  background: $textBoxBack;
   border-radius: 10px;
-  box-shadow: 2px 2px #C0C0C0; 
+  box-shadow: 6px 6px #C0C0C0; 
   width: 50%;
   height: 200px;
   margin-top: 5%;
@@ -101,9 +101,13 @@ button {
   justify-content: center;
   align-items:: center;
   font-size: 22px;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 20px;
   font-family: $bodyFont;
-  height: 80px;
-  width: 300px;
+  height: 120px;
+  width: 400px;
+  transition: all 0.3s ease 0s;
 }
 
 .reset {
@@ -111,63 +115,84 @@ button {
   margin: 10% 0 10% 0;
 }
 
+.reset:hover, .calculate:hover {
+  font-weight: 700;
+  letter-spacing: 3px;
+  background-color: $textBoxBack;
+  color: $headingColor;
+  transition: all 0.3s ease 0s;
+}
+
 .calculate {
-  background-color: $darkAccent;
+  background-color: $buttonColor2;
   margin: 5% 0 5% 0;
 }
 
 .toggleVisibility1, 
 .toggleVisibility2, 
-.toggleVisibility3 {
+.toggleVisibility3,
+.toggleVisibility4,
+.toggleVisibility5 {
   display: none;
-  padding: 40px;
+  padding: 10px;
 }
 
-.jacketBox, .tshirtBox, .hatBox {
+.jacketBox, .tshirtBox, .hatBox, .lycraBox, .silkBox {
   display: none;
   height: 100px;
 }
 
 .jacketBox {
-  width: 200px;
+  width: 150px;
   background-color: $accentColor2;
 }
 
 .tshirtBox {
-  width: 150px;
+  width: 100px;
   background-color: $headingColor;
 }
 
 .hatBox {
-  width: 800px;
+  width: 300px;
   background-color: $buttonColor;
+}
+
+.lycraBox {
+  width: 800px;
+  background-color: $buttonColor2;
+}
+
+.silkBox {
+  width: 200px;
+  background-color: $accentCOlor3;
 }
 
 .jacket, 
 .tshirt, 
-.hat {
+.hat,
+.lycra, 
+.silk {
   padding: 20px;
   width: 60%;
 }
 
-.jacket p, .tshirt p, .hat p {
+.jacket p, .tshirt p, .hat p, .lycra p, .silk p {
   font-size: 1rem;
   font-family: $bodyFont;
 }
 
-.one, .two, .three {
+.one, .two, .three, .four, .five {
   height: 30%;
   display: flex;
   flex-direction: row;
   margin-top: 0;
 }
 
-.leftOne, .leftTwo, .leftThree {
+.leftOne, .leftTwo, .leftThree, .leftFour, .leftFive {
   width: 35%;
 }
 
 //Calculate Section
-
 .calculateTotal {
   background-color: $accentColor2;
   display: flex;
