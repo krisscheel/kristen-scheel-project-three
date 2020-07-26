@@ -102,6 +102,78 @@ myApp.changeEvents = function () {
   });
 }
 
+myApp.changeEvents2 = function () {
+  $('#switch11').change(function () {
+    const index = 0;
+    if ($(this).is(':checked')) {
+      $(".colorBox1").fadeTo(2, 1);
+      $(".toggleVisibility11").fadeTo(2, 1);
+      myApp.clothing[index].checked = true;
+    }
+    else {
+      $(".toggleVisibility11").hide();
+      $(".colorBox1").fadeTo(2, 0);
+      myApp.clothing[index].checked = false;
+    }
+  });
+
+  $('#switch22').change(function () {
+    const index = 1;
+    if ($(this).is(':checked')) {
+      $(".toggleVisibility22").fadeTo(2, 1);
+      $(".colorBox2").fadeTo(2, 1);
+      myApp.clothing[index].checked = true;
+    }
+    else {
+      $(".toggleVisibility22").fadeTo(2, 0);
+      $(".colorBox2").fadeTo(2, 0);
+      myApp.clothing[index].checked = false;
+    }
+  });
+
+  $('#switch33').change(function () {
+    const index = 2;
+    if ($(this).is(':checked')) {
+      $(".toggleVisibility33").fadeTo(2, 1);
+      $(".colorBox3").fadeTo(2, 1);
+      myApp.clothing[index].checked = true;
+    }
+    else {
+      $(".toggleVisibility33").fadeTo(2, 0);
+      $(".colorBox3").fadeTo(2, 0);
+      myApp.clothing[index].checked = false;
+    }
+  });
+
+  $('#switch44').change(function () {
+    const index = 3;
+    if ($(this).is(':checked')) {
+      $(".toggleVisibility44").fadeTo(2, 1);
+      $(".colorBox4").fadeTo(2, 1);
+      myApp.clothing[index].checked = true;
+    }
+    else {
+      $(".toggleVisibility44").fadeTo(2, 0);
+      $(".colorBox4").fadeTo(2, 0);
+      myApp.clothing[index].checked = false;
+    }
+  });
+
+  $('#switch55').change(function () {
+    const index = 4;
+    if ($(this).is(':checked')) {
+      $(".toggleVisibility55").fadeTo(2, 1);
+      $(".colorBox5").fadeTo(2, 1);
+      myApp.clothing[index].checked = true;
+    }
+    else {
+      $(".toggleVisibility55").fadeTo(2, 0);
+      $(".colorBox4").fadeTo(2, 0);
+      myApp.clothing[index].checked = false;
+    }
+  });
+}
+
 //calculate totals function
 myApp.calculateEvents = function () {
   $(".calculate").click(function () {
@@ -144,6 +216,7 @@ myApp.calculateEvents = function () {
 
 myApp.init = function () {
   myApp.changeEvents();
+  myApp.changeEvents2();
   myApp.calculateEvents();
 }
 

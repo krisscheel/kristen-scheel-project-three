@@ -1,6 +1,13 @@
 
-@media (max-width: 1200px){
+@media (max-width: 1400px){
 
+  .horizontalView {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
 }
 /* small desktops and portrait tablet*/
 @media (max-width: 940px) {
@@ -9,7 +16,13 @@
 
 /* portrait tablet to landscape phone */
 @media (max-width: 768px) {
+  .tablet {
+    display: none;
+  }
 
+  .phone {
+    display: block;
+  }
 }
 
 /* portrait phone */

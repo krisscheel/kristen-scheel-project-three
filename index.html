@@ -22,9 +22,11 @@
       <h1>The <span class="l">L</span>ifecycle of Clothing</h1>
     </div>
   </header>
+
   <main>
+    <section class="horizontalView">
     <div class="intro wrapper">
-      <p><span class="instructions">Instructions</span>: select clothing items from the list below to find out how long they take to decompose.</p>
+      <p>Instructions: select clothing items from the list below to find out how long they take to decompose.</p>
     </div>
     <form class="selectItems wrapper">
       <div class="topForm">
@@ -61,7 +63,7 @@
         <div class="four">
           <div class="leftFour">
             <input type="checkbox" id="switch4"><label for="switch4" class="toggleLabel">Canvas Shoes</label>
-            </div>
+          </div>
             <div class="canvas">
             <div class="canvasBox">
               <p class="toggleVisibility4" id="answerFour">1 year.</p>
@@ -83,13 +85,63 @@
         <button class="reset">reset</button>
       </div>
     </form>
+  </section>
 
-    <section class="scroller">
-      <div class="colorBox1"></div>
-      <div class="colorBox2"></div>
-      <div class="colorBox3"></div>
-      <div class="colorBox4"></div>
-      <div class="colorBox5"></div>
+    <section class="tablet">
+      <div class="secondToggles">
+        <div class="LOne">
+            <input type="checkbox" id="switch11"><label for="switch11" class="toggleLabel2">Denim Jacket</label>
+        </div>
+        <div class="lTwo">
+          <input type="checkbox" id="switch22"><label for="switch22" class="toggleLabel2">Cotton Shirt</label>
+        </div>
+        <div class="lThree">
+          <input type="checkbox" id="switch33"><label for="switch33" class="toggleLabel2">Wool Sweater</label>
+        </div>
+        <div class="lFour">
+          <input type="checkbox" id="switch44"><label for="switch44" class="toggleLabel2">Canvas Shoes</label>
+        </div>
+        <div class="lFive">
+          <input type="checkbox" id="switch55"><label for="switch55" class="toggleLabel2">Silk Dress</label>
+        </div>
+      </div>
+      <div class="verticalBars">
+        <div class="colorBox1"><p class="toggleVisibility11" id="answerOne"></i>1 year.</p></div>
+        <div class="colorBox2"><p class="toggleVisibility22" id="answerTwo"></i>6 months.</p></div>
+        <div class="colorBox3"><p class="toggleVisibility33" id="answerThree"></i>6 years.</p></div>
+        <div class="colorBox4"><p class="toggleVisibility44" id="answerFour"></i>1 year.</p></div>
+        <div class="colorBox5"><p class="toggleVisibility44" id="answerFour"></i>4 years.</p></div>
+      </div>
+    </section>
+
+    <section class="phone"> 
+      <p class="instructions2">Instructions: select clothing items from the list below to find out how long they take to decompose.</p>
+      <div class="colorScroll">
+          <div class="box11">
+            <p class="showOnPageLoad">Click to see how long it takes a denim jacket to decompose</p>
+            <p class="showOnClick">A denim jacket will decompose in 1 year.</p>
+          </div>
+  
+          <div class="box22">
+            <p class="showOnPageLoad">Click to see how long it takes a cotton t-shirt to decompose</p>
+            <p class="showOnClick">A cotton t-shirt will decompose in 6 months</p>
+          </div>
+
+          <div class="box33">
+            <p class="showOnPageLoad">Click to see how long it takes a wool sweater to decompose</p>
+            <p class="showOnClick">A wool sweater will decompose in 6 years</p>
+          </div>
+
+          <div class="box44">
+            <p class="showOnPageLoad">Click to see how long it takes a canvas shoe to decompose</p>
+            <p class="showOnClick">A canvas shoe will decompose in one year.</p>
+          </div>
+      
+          <div class="box55">
+            <p class="showOnPageLoad">Click to see how long it takes a silk dress to decompose</p>
+            <p class="showOnClick">A silk dress will decompose in 4 years.</p>
+          </div>
+      </div>
     </section>
 
     <section class="calculateTotal">
@@ -98,6 +150,8 @@
       </div>
         <button class="calculate">calculate</button>
     </section>
+
+   
 
   </main>
 

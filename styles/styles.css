@@ -284,7 +284,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.5rem;
   font-family: "Comfortaa", cursive;
   padding: 30px;
   font-size: 1rem;
@@ -297,6 +296,11 @@ input[type="checkbox"] {
 .toggleLabel {
   font-family: "Comfortaa", cursive;
   font-size: 1.5rem;
+  margin: 15px 0;
+  padding-right: 110px;
+  line-height: 20px;
+  position: relative;
+  display: block;
 }
 
 form {
@@ -314,14 +318,6 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.toggleLabel {
-  margin: 15px 0;
-  padding-right: 110px;
-  line-height: 40px;
-  position: relative;
-  display: block;
 }
 
 .toggleLabel::before {
@@ -406,9 +402,16 @@ button {
 .toggleVisibility2,
 .toggleVisibility3,
 .toggleVisibility4,
-.toggleVisibility5 {
+.toggleVisibility5,
+.toggleVisibility11,
+.toggleVisibility22,
+.toggleVisibility33,
+.toggleVisibility44,
+.toggleVisibility55 {
   display: none;
   padding: 10px;
+  font-size: 1rem;
+  font-family: "Comfortaa", cursive;
 }
 
 .jacketBox, .tshirtBox, .sweaterBox, .canvasBox, .silkBox {
@@ -450,11 +453,6 @@ button {
   width: 60%;
 }
 
-.jacket p, .tshirt p, .sweater p, .canvas p, .silk p {
-  font-size: 1rem;
-  font-family: "Comfortaa", cursive;
-}
-
 .one, .two, .three, .four, .five {
   height: 30%;
   display: -webkit-box;
@@ -485,8 +483,13 @@ button {
           align-items: center;
 }
 
-.scroller {
+.tablet, .phone {
   background-color: #fdf2f2;
+  padding-bottom: 60px;
+  display: none;
+}
+
+.verticalBars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,41 +499,185 @@ button {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-bottom: 60px;
 }
 
 .colorBox1, .colorBox2, .colorBox3, .colorBox4, .colorBox5 {
   width: 15%;
+  opacity: 0;
 }
 
 .colorBox1 {
-  width: 15%;
   background-color: #f6bd60;
   height: 500px;
 }
 
 .colorBox2 {
-  width: 15%;
   background-color: #f28482;
   height: 250px;
 }
 
 .colorBox3 {
-  width: 15%;
   background-color: #84a59d;
   height: 3000px;
 }
 
 .colorBox4 {
-  width: 15%;
   background-color: #8f5779;
   height: 500px;
 }
 
 .colorBox5 {
-  width: 15%;
   background-color: #949595;
   height: 2000px;
+}
+
+.secondToggles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.toggleLabel2 {
+  font-family: "Comfortaa", cursive;
+  font-size: 1rem;
+  margin: 40px 20px;
+  padding-right: 110px;
+  line-height: 20px;
+  position: relative;
+  display: block;
+}
+
+.toggleLabel2::before {
+  content: "";
+  width: 100px;
+  height: 40px;
+  border-radius: 100px;
+  background: #84a59d;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*middle of toggle switch*/
+.toggleLabel2::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  right: 65px;
+}
+
+input[type="checkbox"]:checked + .toggleLabel2::after {
+  right: 5px;
+}
+
+input[type="checkbox"]:checked + .toggleLabel2::before {
+  background: #f5cac3;
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F7EDE2;
+}
+
+.thirdToggles {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.box11, .box22, .box33, .box44, .box55 {
+  width: 300px;
+  height: 100px;
+}
+
+.box11 {
+  background: #f6bd60;
+  height: 200px;
+}
+
+.box22 {
+  background: #f28482;
+  height: 100px;
+}
+
+.box33 {
+  background: #84a59d;
+  height: 1200px;
+}
+
+.box44 {
+  background: #8f5779;
+  height: 200px;
+}
+
+.box55 {
+  background: #949595;
+  height: 800px;
+}
+
+.showOnPageLoad, .showOnClick {
+  font-size: 1rem;
+  font-family: "Comfortaa", cursive;
+  padding: 10px;
+}
+
+.showOnClick {
+  display: none;
+}
+
+.colorScroll {
+  margin-top: 5%;
+}
+
+.instructions2 {
+  margin-top: 5%;
+  width: 300px;
+  background: #8f5779;
+  color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px #C0C0C0;
+          box-shadow: 6px 6px #C0C0C0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.7rem;
+  font-family: "Comfortaa", cursive;
+  padding: 20px;
 }
 
 footer p {
@@ -544,6 +691,24 @@ footer {
   background: #84a59d;
 }
 
+@media (max-width: 1400px) {
+  .horizontalView {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+}
+
 /* small desktops and portrait tablet*/
 /* portrait tablet to landscape phone */
+@media (max-width: 768px) {
+  .tablet {
+    display: none;
+  }
+  .phone {
+    display: block;
+  }
+}
+
 /* portrait phone */
