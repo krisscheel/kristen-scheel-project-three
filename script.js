@@ -14,13 +14,13 @@ myApp.clothing = [
     checked: false
   },
   {
-    name: "wool hat",
-    minBreakdown: 60,
+    name: "wool sweater",
+    minBreakdown: 12,
     checked: false
   },
   {
-    name: "lycra leggings",
-    minBreakdown: 120,
+    name: "canvas shoes",
+    minBreakdown: 72,
     checked: false
   },
   {
@@ -63,12 +63,12 @@ myApp.changeEvents = function () {
     const index = 2;
     if ($(this).is(':checked')) {
       $(".toggleVisibility3").show();
-      $(".hatBox").animate({ 'width': 'toggle', 'duration': 1000 });
+      $(".sweaterBox").animate({ 'width': 'toggle', 'duration': 1000 });
       myApp.clothing[index].checked = true;
     }
     else {
       $(".toggleVisibility3").hide();
-      $(".hatBox").hide();
+      $(".sweaterBox").hide();
       myApp.clothing[index].checked = false;
     }
   });
@@ -77,12 +77,12 @@ myApp.changeEvents = function () {
     const index = 3;
     if ($(this).is(':checked')) {
       $(".toggleVisibility4").show();
-      $(".lycraBox").animate({ 'width': 'toggle', 'duration': 1000 });
+      $(".canvasBox").animate({ 'width': 'toggle', 'duration': 1000 });
       myApp.clothing[index].checked = true;
     }
     else {
       $(".toggleVisibility4").hide();
-      $(".lycraBox").hide();
+      $(".canvasBox").hide();
       myApp.clothing[index].checked = false;
     }
   });

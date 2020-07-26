@@ -100,7 +100,7 @@ button {
   display: flex;
   justify-content: center;
   align-items:: center;
-  font-size: 22px;
+  font-size: 3.5rem;
   font-weight: 100;
   text-transform: uppercase;
   padding: 20px;
@@ -137,46 +137,46 @@ button {
   padding: 10px;
 }
 
-.jacketBox, .tshirtBox, .hatBox, .lycraBox, .silkBox {
+.jacketBox, .tshirtBox, .sweaterBox, .canvasBox, .silkBox {
   display: none;
   height: 100px;
 }
 
 .jacketBox {
-  width: 150px;
+  width: 120px;
   background-color: $accentColor2;
 }
 
 .tshirtBox {
-  width: 100px;
+  width: 80px;
   background-color: $headingColor;
 }
 
-.hatBox {
-  width: 300px;
+.sweaterBox {
+  width:600px;
   background-color: $buttonColor;
 }
 
-.lycraBox {
-  width: 800px;
+.canvasBox {
+  width: 130px;
   background-color: $buttonColor2;
 }
 
 .silkBox {
-  width: 200px;
-  background-color: $accentCOlor3;
+  width: 400px;
+  background-color: $accentColor3;
 }
 
 .jacket, 
 .tshirt, 
-.hat,
-.lycra, 
+.sweater,
+.canvas, 
 .silk {
   padding: 20px;
   width: 60%;
 }
 
-.jacket p, .tshirt p, .hat p, .lycra p, .silk p {
+.jacket p, .tshirt p, .sweater p, .canvas p, .silk p {
   font-size: 1rem;
   font-family: $bodyFont;
 }
@@ -194,11 +194,57 @@ button {
 
 //Calculate Section
 .calculateTotal {
-  background-color: $accentColor2;
+  background-color: $accentColor1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+// mobile color scroller
+
+.scroller {
+  background-color: $textBoxBack;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+.colorBox1, .colorBox2, .colorBox3, .colorBox4, .colorBox5 {
+  width: 15%;
+}
+
+.colorBox1 {
+  width: 15%;
+  background-color: $accentColor2;
+  height: 500px;
+}
+
+.colorBox2 {
+  width: 15%;
+  background-color: $headingColor;
+  height: 250px;
+}
+
+.colorBox3 {
+  width: 15%;
+  background-color: $buttonColor;
+  height: 3000px;
+}
+
+.colorBox4 {
+  width: 15%;
+  background-color: $buttonColor2;
+  height: 500px;
+}
+.colorBox5 {
+  width: 15%;
+  background-color: $accentColor3;
+  height: 2000px;
+}
+
+
+
 
 
 

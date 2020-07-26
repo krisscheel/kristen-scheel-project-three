@@ -239,9 +239,9 @@ header {
 h1 {
   font-family: "Lobster", cursive;
   color: #5f0f40;
-  font-size: 5em;
+  font-size: 6em;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 10%;
   letter-spacing: 0.02em;
 }
 
@@ -372,7 +372,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 22px;
+  font-size: 3.5rem;
   font-weight: 100;
   text-transform: uppercase;
   padding: 20px;
@@ -411,46 +411,46 @@ button {
   padding: 10px;
 }
 
-.jacketBox, .tshirtBox, .hatBox, .lycraBox, .silkBox {
+.jacketBox, .tshirtBox, .sweaterBox, .canvasBox, .silkBox {
   display: none;
   height: 100px;
 }
 
 .jacketBox {
-  width: 150px;
+  width: 120px;
   background-color: #f6bd60;
 }
 
 .tshirtBox {
-  width: 100px;
+  width: 80px;
   background-color: #f28482;
 }
 
-.hatBox {
-  width: 300px;
+.sweaterBox {
+  width: 600px;
   background-color: #84a59d;
 }
 
-.lycraBox {
-  width: 800px;
+.canvasBox {
+  width: 130px;
   background-color: #8f5779;
 }
 
 .silkBox {
-  width: 200px;
-  background-color: #f67260;
+  width: 400px;
+  background-color: #949595;
 }
 
 .jacket,
 .tshirt,
-.hat,
-.lycra,
+.sweater,
+.canvas,
 .silk {
   padding: 20px;
   width: 60%;
 }
 
-.jacket p, .tshirt p, .hat p, .lycra p, .silk p {
+.jacket p, .tshirt p, .sweater p, .canvas p, .silk p {
   font-size: 1rem;
   font-family: "Comfortaa", cursive;
 }
@@ -472,7 +472,7 @@ button {
 }
 
 .calculateTotal {
-  background-color: #f6bd60;
+  background-color: #f5cac3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,6 +483,54 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.scroller {
+  background-color: #fdf2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+.colorBox1, .colorBox2, .colorBox3, .colorBox4, .colorBox5 {
+  width: 15%;
+}
+
+.colorBox1 {
+  width: 15%;
+  background-color: #f6bd60;
+  height: 500px;
+}
+
+.colorBox2 {
+  width: 15%;
+  background-color: #f28482;
+  height: 250px;
+}
+
+.colorBox3 {
+  width: 15%;
+  background-color: #84a59d;
+  height: 3000px;
+}
+
+.colorBox4 {
+  width: 15%;
+  background-color: #8f5779;
+  height: 500px;
+}
+
+.colorBox5 {
+  width: 15%;
+  background-color: #949595;
+  height: 2000px;
 }
 
 footer p {
