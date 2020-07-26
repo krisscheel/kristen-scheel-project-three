@@ -181,24 +181,73 @@ myApp.clickEvent = function () {
      myApp.clothing[index].checked = false;
      $(this).find(".showOnClick").hide();
      $(this).find(".showOnPageLoad").show();
-
+     $(this).fadeTo(1, 1);
    } else {
      myApp.clothing[index].checked = true;
      $(this).find(".showOnClick").show();
      $(this).find(".showOnPageLoad").hide();
+     $(this).fadeTo(1, 0.5);
    }
  });
   $('.box22').click(function () {
-    console.log('clicked');
+    const index = 1;
+    if (myApp.clothing[index].checked) {
+      myApp.clothing[index].checked = false;
+      $(this).find(".showOnClick").hide();
+      $(this).find(".showOnPageLoad").show();
+      $(this).fadeTo(1, 1);
+
+    } else {
+      myApp.clothing[index].checked = true;
+      $(this).find(".showOnClick").show();
+      $(this).find(".showOnPageLoad").hide();
+      $(this).fadeTo(1, 0.5);
+    }
   });
   $('.box33').click(function () {
-    console.log('clicked');
+    const index = 2;
+    if (myApp.clothing[index].checked) {
+      myApp.clothing[index].checked = false;
+      $(this).find(".showOnClick").hide();
+      $(this).find(".showOnPageLoad").show();
+      $(this).fadeTo(1, 1);
+
+    } else {
+      myApp.clothing[index].checked = true;
+      $(this).find(".showOnClick").show();
+      $(this).find(".showOnPageLoad").hide();
+      $(this).fadeTo(1, 0.5);
+    }
   });
   $('.box44').click(function () {
-    console.log('clicked');
+    const index = 3;
+    if (myApp.clothing[index].checked) {
+      myApp.clothing[index].checked = false;
+      $(this).find(".showOnClick").hide();
+      $(this).find(".showOnPageLoad").show();
+      $(this).fadeTo(1, 1);
+
+    } else {
+      myApp.clothing[index].checked = true;
+      $(this).find(".showOnClick").show();
+      $(this).find(".showOnPageLoad").hide();
+      $(this).fadeTo(1, 0.5);
+    }
   });
   $('.box55').click(function () {
-    console.log('clicked');
+    const index = 4;
+    if (myApp.clothing[index].checked) {
+      myApp.clothing[index].checked = false;
+      $(this).find(".showOnClick").hide();
+      $(this).find(".showOnPageLoad").show();
+      $(this).fadeTo(1, 1);
+
+    } else {
+      myApp.clothing[index].checked = true;
+      $(this).find(".showOnClick").show();
+      $(this).find(".showOnPageLoad").hide();
+      $(this).fadeTo(1, 0.5);
+    }
   });
 }
 

@@ -640,7 +640,8 @@ input[type="checkbox"]:checked + .toggleLabel2::before {
 
 .showOnClick {
   display: none;
-  color: red;
+  color: "Comfortaa", cursive;
+  font-size: 1rem;
 }
 
 .colorScroll {
