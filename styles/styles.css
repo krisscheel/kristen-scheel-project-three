@@ -483,7 +483,7 @@ button {
           align-items: center;
 }
 
-.tablet, .phone {
+.tablet {
   background-color: #fdf2f2;
   padding-bottom: 60px;
   display: none;
@@ -588,9 +588,6 @@ input[type="checkbox"]:checked + .toggleLabel2::before {
 }
 
 .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -602,12 +599,7 @@ input[type="checkbox"]:checked + .toggleLabel2::before {
       -ms-flex-align: center;
           align-items: center;
   background: #F7EDE2;
-}
-
-.thirdToggles {
-  display: block;
-  padding: 0;
-  margin: 0;
+  display: none;
 }
 
 .box11, .box22, .box33, .box44, .box55 {
@@ -652,6 +644,20 @@ input[type="checkbox"]:checked + .toggleLabel2::before {
 
 .colorScroll {
   margin-top: 5%;
+  margin-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .instructions2 {
@@ -680,6 +686,22 @@ input[type="checkbox"]:checked + .toggleLabel2::before {
   padding: 20px;
 }
 
+.intro2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 footer p {
   text-align: center;
   font-family: "Comfortaa", cursive;
@@ -698,11 +720,31 @@ footer {
   .tablet {
     display: block;
   }
+  .phone {
+    display: none;
+  }
 }
 
-/* small desktops and portrait tablet*/
 /* portrait tablet to landscape phone */
 @media (max-width: 768px) {
+  header {
+    height: 400px;
+  }
+  h1 {
+    font-size: 5em;
+    padding: 40px 20px 20px 20px;
+  }
+  button {
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: "Comfortaa", cursive;
+    height: 100px;
+    width: 290px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
   .tablet {
     display: none;
   }
@@ -710,5 +752,3 @@ footer {
     display: block;
   }
 }
-
-/* portrait phone */

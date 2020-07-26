@@ -200,7 +200,7 @@ button {
 
 // mobile (tablet) view styles //////////////////////////////////////
 
-.tablet, .phone {
+.tablet {
   background-color: $textBoxBack;
   padding-bottom: 60px;
   display: none;
@@ -293,17 +293,12 @@ input[type="checkbox"]:checked + .toggleLabel2::before {
 /////////// mobile (phone) view styles ///////////////////////
 
 .phone {
-display: flex;
+//display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 background: $backgroundColor;
-}
-
-.thirdToggles {
-  display: block;
-  padding: 0;
-  margin: 0;
+display: none;
 }
 
 .box11, .box22, .box33, .box44, .box55 {
@@ -348,6 +343,11 @@ background: $backgroundColor;
 
 .colorScroll {
   margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .instructions2 {
@@ -364,5 +364,12 @@ background: $backgroundColor;
   font-size: 0.7rem;
   font-family: $bodyFont;
   padding: 20px;
+}
+
+.intro2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 

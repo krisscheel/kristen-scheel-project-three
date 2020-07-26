@@ -8,14 +8,36 @@
   .tablet {
     display: block;
   }
-}
-/* small desktops and portrait tablet*/
-@media (max-width: 940px) {
+
+  .phone {
+    display: none;
+  }
 
 }
 
 /* portrait tablet to landscape phone */
 @media (max-width: 768px) {
+
+  header {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 5em;
+    padding: 40px 20px 20px 20px;
+  }
+
+  button {
+  font-size: 2.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 20px;
+  font-family: $bodyFont;
+  height: 100px;
+  width: 290px;
+  transition: all 0.3s ease 0s;
+}
+
   .tablet {
     display: none;
   }
@@ -23,9 +45,4 @@
   .phone {
     display: block;
   }
-}
-
-/* portrait phone */
-@media (max-width: 320px) {
-
 }
