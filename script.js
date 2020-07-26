@@ -174,6 +174,34 @@ myApp.changeEvents2 = function () {
   });
 }
 
+myApp.clickEvent = function () {
+ $('.box11').click(function(){
+   const index = 0;
+   if (myApp.clothing[index].checked) {
+     myApp.clothing[index].checked = false;
+     $(this).find(".showOnClick").hide();
+     $(this).find(".showOnPageLoad").show();
+
+   } else {
+     myApp.clothing[index].checked = true;
+     $(this).find(".showOnClick").show();
+     $(this).find(".showOnPageLoad").hide();
+   }
+ });
+  $('.box22').click(function () {
+    console.log('clicked');
+  });
+  $('.box33').click(function () {
+    console.log('clicked');
+  });
+  $('.box44').click(function () {
+    console.log('clicked');
+  });
+  $('.box55').click(function () {
+    console.log('clicked');
+  });
+}
+
 //calculate totals function
 myApp.calculateEvents = function () {
   $(".calculate").click(function () {
@@ -217,6 +245,7 @@ myApp.calculateEvents = function () {
 myApp.init = function () {
   myApp.changeEvents();
   myApp.changeEvents2();
+  myApp.clickEvent();
   myApp.calculateEvents();
 }
 

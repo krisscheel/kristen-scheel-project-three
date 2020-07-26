@@ -640,6 +640,7 @@ input[type="checkbox"]:checked + .toggleLabel2::before {
 
 .showOnClick {
   display: none;
+  color: red;
 }
 
 .colorScroll {
