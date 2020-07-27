@@ -15,12 +15,12 @@ myApp.clothing = [
   },
   {
     name: "wool sweater",
-    minBreakdown: 12,
+    minBreakdown: 72,
     checked: false
   },
   {
     name: "canvas shoes",
-    minBreakdown: 72,
+    minBreakdown: 12,
     checked: false
   },
   {
