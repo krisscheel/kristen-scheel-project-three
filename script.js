@@ -168,40 +168,41 @@ myApp.changeEvents2 = function () {
     }
     else {
       $(".toggleVisibility55").fadeTo(2, 0);
-      $(".colorBox4").fadeTo(2, 0);
+      $(".colorBox5").fadeTo(2, 0);
       myApp.clothing[index].checked = false;
     }
   });
 }
 
 myApp.clickEvent = function () {
- $('.box11').click(function(){
-   const index = 0;
-   if (myApp.clothing[index].checked) {
-     myApp.clothing[index].checked = false;
-     $(this).find(".showOnClick").hide();
-     $(this).find(".showOnPageLoad").show();
-     $(this).fadeTo(1, 1);
-   } else {
-     myApp.clothing[index].checked = true;
-     $(this).find(".showOnClick").show();
-     $(this).find(".showOnPageLoad").hide();
-     $(this).fadeTo(1, 0.5);
-   }
- });
+$('.box11').click(function(){
+  const index = 0;
+  if (myApp.clothing[index].checked) {
+  myApp.clothing[index].checked = false;
+  $(this).find(".showOnClick").hide();
+  $(this).find(".showOnPageLoad").show();
+  $(this).css("background", "$accentColor2");
+} else {
+  myApp.clothing[index].checked = true;
+  $(this).find(".showOnClick").show();
+  $(this).find(".showOnPageLoad").hide();
+  $(this).css("background", "#f9d79f");
+  //$(this).fadeTo(1, 0.5);
+  }
+});
   $('.box22').click(function () {
     const index = 1;
     if (myApp.clothing[index].checked) {
       myApp.clothing[index].checked = false;
       $(this).find(".showOnClick").hide();
       $(this).find(".showOnPageLoad").show();
-      $(this).fadeTo(1, 1);
+      $(this).css("background", "#f28482");
 
     } else {
       myApp.clothing[index].checked = true;
       $(this).find(".showOnClick").show();
       $(this).find(".showOnPageLoad").hide();
-      $(this).fadeTo(1, 0.5);
+      $(this).css("background", "#f8c1c0"); 
     }
   });
   $('.box33').click(function () {
@@ -210,13 +211,13 @@ myApp.clickEvent = function () {
       myApp.clothing[index].checked = false;
       $(this).find(".showOnClick").hide();
       $(this).find(".showOnPageLoad").show();
-      $(this).fadeTo(1, 1);
+      $(this).css("background", "$buttonColor"); 
 
     } else {
       myApp.clothing[index].checked = true;
       $(this).find(".showOnClick").show();
       $(this).find(".showOnPageLoad").hide();
-      $(this).fadeTo(1, 0.5);
+      $(this).css("background", "#b5c9c4");
     }
   });
   $('.box44').click(function () {
@@ -225,13 +226,13 @@ myApp.clickEvent = function () {
       myApp.clothing[index].checked = false;
       $(this).find(".showOnClick").hide();
       $(this).find(".showOnPageLoad").show();
-      $(this).fadeTo(1, 1);
+      $(this).css("background", "#8f5779");
 
     } else {
       myApp.clothing[index].checked = true;
       $(this).find(".showOnClick").show();
       $(this).find(".showOnPageLoad").hide();
-      $(this).fadeTo(1, 0.5);
+      $(this).css("background", "#bb9aae");
     }
   });
   $('.box55').click(function () {
@@ -240,13 +241,13 @@ myApp.clickEvent = function () {
       myApp.clothing[index].checked = false;
       $(this).find(".showOnClick").hide();
       $(this).find(".showOnPageLoad").show();
-      $(this).fadeTo(1, 1);
+      $(this).css("background", "#949595");
 
     } else {
       myApp.clothing[index].checked = true;
       $(this).find(".showOnClick").show();
       $(this).find(".showOnPageLoad").hide();
-      $(this).fadeTo(1, 0.5);
+      $(this).css("background", "#bebfbf");
     }
   });
 }
