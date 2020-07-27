@@ -1,5 +1,5 @@
 
-@media (max-width: 1400px){
+@media (max-width: 1600px){
 
   .horizontalView {
     display: none;
@@ -12,14 +12,13 @@
   .phone {
     display: none;
   }
-
 }
 
 /* portrait tablet to landscape phone */
-@media (max-width: 768px) {
+@media (max-width: 1450px) {
 
   header {
-    height: 600px;
+    height: 1200px;
   }
 
   h1 {
